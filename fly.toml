@@ -35,5 +35,5 @@ primary_region = 'lhr'
   path = "/health"
 
 [deploy]
-  strategy = "bluegreen"
+  strategy = "canary"
 
