@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: messages contain skip
-        if: ${{{ contains(join(toJson(github.event.commits.*.message)), \#skip) }}}
+        if: ${{ contains(join(toJson(github.event.commits.*.message)), \#skip) }}
         env:
           COMMIT_MESSAGES: ${{ contains(join(toJson(github.event.commits.*.message)), \#skip) }}
         run: echo "$COMMIT_MESSAGES"
