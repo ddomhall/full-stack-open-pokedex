@@ -11,6 +11,7 @@ app.get('/health', (req, res) => {
 })
 
 app.listen(PORT, () => {
+  lint_fail
   // eslint-disable-next-line
   console.log(`server started on port ${PORT}`)
 })
